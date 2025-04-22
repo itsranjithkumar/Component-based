@@ -11,7 +11,7 @@ interface Props {
   error?: string;
 }
 
-export const DatePickerField: React.FC<Props> = ({
+const DatePickerField: React.FC<Props> = ({
   label,
   selectedDate,
   onChange,
@@ -36,3 +36,5 @@ export const DatePickerField: React.FC<Props> = ({
     </div>
   );
 };
+
+export default DatePickerField;

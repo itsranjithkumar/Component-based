@@ -14,7 +14,7 @@ interface InputProps {
   error?: string;
 }
 
-export const InputField: React.FC<InputProps> = ({
+const InputField: React.FC<InputProps> = ({
   label,
   name,
   type = 'text',
@@ -34,7 +34,9 @@ export const InputField: React.FC<InputProps> = ({
 
   return (
     <div className="mb-4">
-      <label htmlFor={name} className="block mb-1 font-semibold">{label}</label>
+      <label htmlFor={name} className="block mb-1 font-semibold">
+        {label}
+      </label>
       <input
         id={name}
         name={name}
@@ -50,3 +52,5 @@ export const InputField: React.FC<InputProps> = ({
     </div>
   );
 };
+
+export default InputField;

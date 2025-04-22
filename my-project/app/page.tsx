@@ -1,4 +1,5 @@
-import { UseForm } from './components/UseForm';
+import React from "react";
+import UseForm from "./components/UseForm";
 
 export default function Home() {
   return (

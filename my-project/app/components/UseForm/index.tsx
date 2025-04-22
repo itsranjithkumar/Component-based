@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import { InputField } from './InputField';
-import { DatePickerField } from './DatePickerField';
+import InputField from '../InputField';
+import DatePickerField from '../DatePickerField';
 
-export const UseForm = () => {
+const UseForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '' });
   const [date, setDate] = useState<Date | null>(null);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -77,3 +77,5 @@ export const UseForm = () => {
     </form>
   );
 };
+
+export default UseForm;
